@@ -3,13 +3,13 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 .utmp/
-/Sandwich_Game/[Ll]ibrary/
-/Sandwich_Game/[Tt]emp/
-/Sandwich_Game/[Oo]bj/
+/Sandwich_Game/[Library/
+/Sandwich_Game/Temp/
+/Sandwich_Game/obj/
 /Sandwich_Game/[Bb]uild/
 /Sandwich_Game/[Bb]uilds/
-/Sandwich_Game/[Ll]ogs/
-/Sandwich_Game/[Uu]ser[Ss]ettings/
+/Sandwich_Game/Logs/
+/Sandwich_Game/UserSettings/
 *.log
 
 # MemoryCaptures can get excessive in size.

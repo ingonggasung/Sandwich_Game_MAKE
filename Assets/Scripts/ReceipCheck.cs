@@ -9,7 +9,7 @@ public class ReceipeCheck : MonoBehaviour
     public Receipe receipe;
 
     // 해금된 레시피 목록을 가져오기 위해 RecipeManager 스크립트를 연결합니다.
-    public RecipeManager recipeManager;
+    public ReciepeManager recipeManager;
 
     // 검사할 오브젝트들의 태그
     private const string ingredientTag = "Ingredient";

@@ -6,7 +6,7 @@ using System.Linq;
 
 public class OrderManager : MonoBehaviour
 {
-    public RecipeManager recipeManager;
+    public ReciepeManager recipeManager;
 
     public TMP_Text dialogueTMPText;  // TextMeshPro 텍스트 컴포넌트 연결용
 
