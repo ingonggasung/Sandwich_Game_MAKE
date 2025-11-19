@@ -80,6 +80,8 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 2fd6421f253b4ef1a19526541f9ffc0c, type: 3}
     instantiationMode: 1
+  - dependency: {fileID: 8316615626928633014, guid: 4be2edfa83b8c3f41ba7c0592313afff, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 1011062204047752645, guid: 75c25808f9a800540a29e02d199ce04c, type: 3}
@@ -89,6 +91,8 @@ MonoBehaviour:
   - dependency: {fileID: 2800000, guid: 92843db287614594a98f73c8f357d310, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2390794821415442399, guid: 0e7d75c42d07eda42a79f030c7f8bb2e, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 2ae2eb38dc941304dac348cb339cd464, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 6673276464583289036, guid: 154309cc4ae66dc4aba7c7e522b068f3, type: 3}
     instantiationMode: 0
@@ -103,8 +107,6 @@ MonoBehaviour:
   - dependency: {fileID: 2800000, guid: 5bcd83a604733fc4ab4940531b8224ba, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: f07e9611ca351d048a2ead9b91bdc40c, type: 3}
-    instantiationMode: 0
-  - dependency: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2150781469809013213, guid: ebb4efb9fa500984b8b38ceb4f52b19e, type: 3}
     instantiationMode: 0
@@ -178,10 +180,10 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: f4e8b2af067862f40b6e9af39cce39e5, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: be3772eff216c1c489c083ac0140caa5, type: 3}
-    instantiationMode: 0
   - dependency: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: be3772eff216c1c489c083ac0140caa5, type: 3}
+    instantiationMode: 0
   templatePipeline: {fileID: 0}
   badge: {fileID: 0}
   addToDefaults: 1
