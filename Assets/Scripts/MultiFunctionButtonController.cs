@@ -108,6 +108,7 @@ public class MultiFunctionButtonController : MonoBehaviour
                 isCheckingRecipe = true;
 
                 receipeCheckScript.CheckRecipe();
+                ZPositionController.ResetZPositionTo15();
 
                 yesButton.gameObject.SetActive(false);
                 noButton.gameObject.SetActive(false);

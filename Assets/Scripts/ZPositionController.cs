@@ -22,7 +22,7 @@ public class ZPositionController : MonoBehaviour
     // 외부 호출용 - z값 초기화 (예: 오브젝트 파괴 직후 호출)
     public static void ResetZPositionTo15()
     {
-        currentZPosition = 14f;
+        currentZPosition = 13f;
         Debug.Log("[ZPositionController] currentZPosition reset to 13");
     }
 
