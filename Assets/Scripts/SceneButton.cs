@@ -3,19 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class SceneButton : MonoBehaviour
 {
-    // New Game ��ư
+    // New Game
     public void GoToNewGame()
     {
         PlayerPrefs.SetString("GameMode", "NewGame");
         PlayerPrefs.Save();
-        SceneManager.LoadScene("GamePlay"); // ���� ���� �� �̸�
+        SceneManager.LoadScene("Sandwich_Make");
     }
 
-    // Continue ��ư
+    // Continue
     public void GoToContinue()
     {
         PlayerPrefs.SetString("GameMode", "Continue");
         PlayerPrefs.Save();
-        SceneManager.LoadScene("GamePlay"); // ���� ���� �� �̸�
+        SceneManager.LoadScene("Sandwich_Make");
     }
 }

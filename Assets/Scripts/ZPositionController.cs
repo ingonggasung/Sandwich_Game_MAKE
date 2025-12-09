@@ -6,7 +6,7 @@ public class ZPositionController : MonoBehaviour
 
     void Start()
     {
-        // ½ÃÀÛ ½Ã Z°ª Ã¼Å©¹Ú½º À§Ä¡ ±â¹Ý ÃÊ±âÈ­
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Zï¿½ï¿½ Ã¼Å©ï¿½Ú½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
         currentZPosition = transform.position.z - 0.5f;
     }
 
@@ -19,14 +19,14 @@ public class ZPositionController : MonoBehaviour
         currentZPosition -= 0.5f;
     }
 
-    // ¿ÜºÎ È£Ãâ¿ë - z°ª ÃÊ±âÈ­ (¿¹: ¿ÀºêÁ§Æ® ÆÄ±« Á÷ÈÄ È£Ãâ)
+    // ï¿½Üºï¿½ È£ï¿½ï¿½ï¿½ - zï¿½ï¿½ ï¿½Ê±ï¿½È­ (ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ä±ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½)
     public static void ResetZPositionTo15()
     {
         currentZPosition = 13f;
         Debug.Log("[ZPositionController] currentZPosition reset to 13");
     }
 
-    // Çö »óÅÂ returned (ÇÊ¿ä ½Ã)
+    // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ returned (ï¿½Ê¿ï¿½ ï¿½ï¿½)
     public static float GetCurrentZPosition()
     {
         return currentZPosition;

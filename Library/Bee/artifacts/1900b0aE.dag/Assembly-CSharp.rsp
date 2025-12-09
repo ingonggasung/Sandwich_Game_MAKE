@@ -392,6 +392,7 @@
 "Assets/Scripts/ReceipCheck.cs"
 "Assets/Scripts/Receipe.cs"
 "Assets/Scripts/ReceipeManager.cs"
+"Assets/Scripts/RecipePanelToggle.cs"
 "Assets/Scripts/SauceManager.cs"
 "Assets/Scripts/SauceToggle.cs"
 "Assets/Scripts/SaveData.cs"

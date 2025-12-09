@@ -41,7 +41,7 @@ public class ReceipeManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("��� �����ǰ� �̹� �رݵǾ����ϴ�.");
+                Debug.Log("��� �����ǰ� �̹� �رݵǾ����ϴ�.");
                 break;
             }
         }
@@ -56,7 +56,7 @@ public class ReceipeManager : MonoBehaviour
             if (!unlockedRecipes.Contains(recipeToUnlock))
             {
                 unlockedRecipes.Add(recipeToUnlock);
-                Debug.Log($"������ �ر�: {recipeToUnlock.stepDescription}");
+                Debug.Log($"������ �ر�: {recipeToUnlock.stepDescription}");
             }
         }
     }
@@ -77,6 +77,56 @@ public class ReceipeManager : MonoBehaviour
         PlayerPrefs.SetString(saveKey, json);
         PlayerPrefs.Save();
     }
+
+    public void ResetRecipesToDefault()
+    {
+        unlockedRecipes.Clear();
+        currentRecipeIndex = -1;
+        // "햄 샌드위치"가 들어가는 모든 레시피 잠금 해제
+        var hamRecipes = receipeData.SandwichReceipe.Where(r => r.stepDescription.Contains("햄 샌드위치"));
+        foreach (var hamRecipe in hamRecipes)
+        {
+            unlockedRecipes.Add(hamRecipe);
+        }
+        // 저장 및 디버그 출력
+        SaveUnlockedRecipes();
+        Debug.Log("레시피가 기본값(햄 샌드위치 1/2)으로 초기화되었습니다.");
+    }
+
+    public void UnlockRecipesByDay(int day)
+    {
+        var sandwichList = receipeData.SandwichReceipe.ToList();
+
+        // 종류별 해금 순서 (1일차=0번째)
+        List<string> unlockTypes = new List<string> {
+        "햄 샌드위치",     // 1일차
+        "치즈 샌드위치",   // 2일차
+        "참치 샌드위치",   // 3일차
+        "치킨 샌드위치",   // 4일차
+        "땅콩 샌드위치"    // 5일차
+         };
+        if (day < 1 || day > unlockTypes.Count)
+            day = Mathf.Clamp(day, 1, unlockTypes.Count);
+
+        unlockedRecipes.Clear();
+
+        for (int t = 0; t < day; t++)
+        {
+            string typeName = unlockTypes[t];
+            var foundRecipes = sandwichList.Where(r => r.stepDescription.Contains(typeName));
+            foreach (var recipe in foundRecipes)
+            {
+                if (!unlockedRecipes.Contains(recipe))
+                    unlockedRecipes.Add(recipe);
+            }
+        }
+
+        currentRecipeIndex = unlockedRecipes.Count - 1;
+
+        SaveUnlockedRecipes();
+        Debug.Log($"{day}일차 해금: {string.Join(", ", unlockedRecipes.Select(r => r.stepDescription))}");
+    }
+
 
     public void LoadUnlockedRecipes()
     {

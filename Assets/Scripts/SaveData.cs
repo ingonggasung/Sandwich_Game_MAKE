@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class SaveData : MonoBehaviour
+public class SaveData
 {
     public int Day;
     public float Rating;
